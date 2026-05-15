@@ -1,4 +1,4 @@
-*{
+/* *{
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
@@ -159,4 +159,253 @@ button{
         border-color: rgba(0, 0, 0, 0.025);
     }
     
+} */
+
+
+
+
+
+
+
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
 }
+
+.main{
+    width: 100%;
+    height: 100vh;
+    background-image: url(Assets/Images/r1.jpg);
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    position: relative;
+    top: -10px;
+    width: 80%;
+    height: 80%;
+    border: 5px solid black ;
+    border-radius: 40px;
+    text-align: center;
+    background-color: rgba(1, 7, 12, 0.18);
+    box-shadow: 3px 5px 10px 1px rgb(247, 245, 245);
+}
+
+marquee{
+    position: relative;
+    top: -35px;
+    color: whitesmoke;
+    font-size: 20px;
+    text-shadow: 3px 4px 10px whitesmoke;
+
+    animation-name: marquee;
+    animation-duration: 3s;
+    animation-delay: 0.10s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes marquee {
+
+    0%{
+        transform: translate(2px,18px);
+    }
+    25%{
+        transform: translate(12px,8px);
+    }
+    50%{
+        transform: translate(2px,18px);
+    }
+    75%{
+        transform: translate(12px,8px);
+    }
+    100%{
+       transform: translate(2px,18px);
+    }
+}
+
+h1{
+    text-align: center;
+    font-size: 30px;
+    color: whitesmoke;
+    text-shadow: 3px 2px 20px whitesmoke;
+    position: relative;
+    top: 10px;
+
+    animation-name: h1;
+    animation-delay: 0.01ms;
+    animation-duration: 7s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes h1 {
+
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(360deg);
+    }
+    
+}
+
+.in1{
+    border-radius: 15px;
+    margin: 7px;
+    border: none;
+    border-bottom: 5px solid rgb(250, 250, 249);
+}
+
+.in1:hover{
+    transform: scale(1.05,1.05);
+}
+
+input{
+    color: whitesmoke;
+    text-shadow: 3px 2px 40px rgb(250, 248, 248);
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: rgba(245, 245, 245, 0);
+    border: none;
+    border-bottom: 5px solid rgba(250, 250, 249, 0.975);
+}
+
+.in2:hover{
+    transform: scale(1.05,1.05);
+    background-color: rgba(4, 70, 70, 0.272);
+}
+
+::placeholder{
+    color: rgb(245, 243, 243);
+    font-size: 20px;
+    text-shadow: 3px 2px 40px rgb(250, 248, 248);
+    padding: 20px;
+}
+
+button{
+    width: 130px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 25px;
+    background-color: rgba(245, 245, 245, 0);
+    color: rgb(244, 243, 243);
+    text-shadow: 3px 4px 40px rgb(250, 248, 248);
+    border: 3px solid rgba(245, 242, 242, 0.527) ;
+    position: relative;
+    bottom: 15px;
+
+    transition-duration: 2s;
+    transition-delay: 3s;
+
+    animation-name: button;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes button {
+
+    from{
+        color: whitesmoke;
+        transform: scale(1,1.05);
+    }
+    to{
+        color: whitesmoke;
+        text-shadow: 3px 4px 10px rgb(250, 248, 248);
+        transform: scale(1.05,1.10);
+        box-shadow: 3px 2px 20px 5px black;
+        border-color: rgba(0, 0, 0, 0.025);
+    }
+    
+}
+
+
+@media (min-width: 768px) {
+
+.container{
+    position: relative;
+    top: 10px;
+    width: 70%;
+    height: 75%;
+}
+
+marquee{
+    position: relative;
+    top: -55px;
+    font-size: 40px;
+}
+
+h1{
+    font-size: 50px;
+}
+
+.in1{
+    margin: 10px;
+}
+
+input{
+    font-size: 35px;
+    margin: 5px;
+}
+
+button{
+    width: 170px;
+    height: 55px;
+    font-size: 30px;
+}
+}
+
+
+
+@media (min-width: 1280px) {
+
+.container{
+    position: relative;
+    top: -10px;
+    width: 60%;
+    height: 85%;
+}
+
+marquee{
+    position: relative;
+    top: -35px;
+    font-size: 30px;
+}
+
+h1{
+    font-size: 45px;
+}
+
+.in1{
+    margin: 10px;
+    margin-bottom: 2px;
+}
+
+.in2{
+    margin-top: 5px;
+    margin: 1px;
+    font-size: 35px;
+}
+
+input{
+    font-size: 25px;   
+}
+
+button{
+    /* width: 170px;
+    height: 55px; */
+    font-size: 20px;
+}
+}
+ 
