@@ -374,3 +374,68 @@ aside{
     color: rgb(22, 106, 106);
     text-shadow: 3px 4px 30px rgba(23, 32, 32, 0.148);
 }
+
+                                     /* d2-c3 */
+
+.d2-c3{
+    width: 100%;
+    position: relative;
+    top: 120px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+} 
+
+.d2-c3-h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.d2-c3-p{
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.d2-c3-d1{
+    width: 23%;
+    border: 5px solid black;
+    padding: 10px;
+}
+
+.d2-c3-d1-c1-image{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.d2-c3-d1-c2-h1{
+    padding-top: 10px;
+    font-size: 40px;
+}
+
+.d2-c3-d1-c2-i{
+    width: 20px;
+    height: 20px;
+}
+
+.d2-c3-d1-c2-s1{
+    font-size: 22px;
+}
+
+.d2-c3-d1-c2-p{
+    background-color: rgb(16, 139, 222);
+    color: black;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.d2-c3-d1-c2-s2-i{
+    width: 30px;
+    height: 30px;
+    margin-top: 20px;   
+}
+
+.d2-c3-d1-c2-s2{
+    font-size: 25px;
+}
